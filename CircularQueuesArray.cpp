@@ -132,12 +132,13 @@ int main(int argc, char const *argv[])
                 return 0;
             default:
                 break;
+            }
         }
         catch(exception& e){
-
+            cout << "Check for the values entered" <<endl;
         }
     }
-    
+        
     return 0;
 }
 
