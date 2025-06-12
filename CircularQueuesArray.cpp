@@ -41,4 +41,14 @@ public:
             queue_array[REAR] = num;
         }  
     }
+    void remove(){
+        //cek apakah antrian kosong
+        if (FRONT == -1)
+        {
+            cout << "Queue Overflow \n";
+            return;
+        }
+        cout << "\nThe element deleted from queue is : " << queue_array[FRONT]<<endl;
+
+    }
 };
