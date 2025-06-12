@@ -22,15 +22,14 @@ public:
         //1. cek apakah antrian penuh
         if ((FRONT == 0 && REAR == max-1)||(FRONT == REAR+1))
         {
-        cout << "Queue Overflow \n";//1a
-
+            cout << "Queue Overflow \n";//1a
+            return;//1b
         }
-        
+        //2.cek apakah antrian kosong
+        if (FRONT== -1)
+        {
+            FRONT = 0; //2a
+            REAR = 0; //2b
+        }
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    
-    return 0;
-}
