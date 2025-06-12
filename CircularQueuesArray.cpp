@@ -103,6 +103,21 @@ public:
 };
 int main(int argc, char const *argv[])
 {
+    Queues q;
+    char ch;
+    while (true)
+    {
+        {
+            cout << "Menu\n";
+            cout << "1. Implement insert operation\n";
+            cout << "2. Implement delete operation\n";
+            cout << "3. Display value\n";
+            cout << "4. Exit\n";
+            cout << "Enter your choice (1-4): ";
+            cin >> ch ;
+            cout<<endl;
+        }
+    }
     
     return 0;
 }
